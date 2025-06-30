@@ -4,7 +4,7 @@ import About from './components/About'
 import Navbar from './components/Navbar'
 import { Features } from 'tailwindcss'
 import Feature from './components/Feature'
-import Story from './components/story'
+import Story from './components/Story'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
 
