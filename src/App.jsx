@@ -4,6 +4,9 @@ import About from './components/About'
 import Navbar from './components/Navbar'
 import { Features } from 'tailwindcss'
 import Feature from './components/Feature'
+import Story from './components/story'
+import Contact from './components/Contact'
+import Footer from './components/Footer'
 
 const App = () => {
   return (
@@ -12,6 +15,9 @@ const App = () => {
       <Hero/>
       <About/>
       <Feature/>
+      <Story/>
+      <Contact/>
+      <Footer/>
     </main>
       
     
