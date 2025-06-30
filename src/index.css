@@ -58,7 +58,7 @@ body{
     @apply absolute top-1/2 left-1/2 translate-x-[-50%] translate-y-[-50%];
   }
 
-  .special-font{
+  .special-font b {
     font-family: zentry-regular;
     font-feature-settings: 'ss01'on;
   }
@@ -186,8 +186,8 @@ body{
 .flex-center{
   @apply flex items-center justify-center
 }
-.animated-word{
-  @apply  special-font font-zentry font-black opacity-0;
+.animated-word {
+  @apply   font-zentry-regular font-black opacity-0 text-7xl;
     transform: translate3d(10px, 51px, -60px) rotateY(60deg) rotateX(-40deg);
     transform-origin: 50% 50% -150px !important;
     will-change: opacity, transform;
@@ -195,4 +195,22 @@ body{
 
 .animated-title{
    @apply flex flex-col gap-1 text-7xl uppercase leading-[.8] text-white sm:px-32 md:text-[6rem];
+}
+
+.nav-hover-btn{
+  @apply relative ms-10 font-general text-xs uppercase text-blue-50 after:absolute after:-bottom-0.5 after:left-0 after:h-[2px] after:w-full after:origin-bottom-right after:scale-x-0 after:bg-neutral-800 after:transition-transform after:duration-300 after:ease-[cubic-bezier(0.65_0.05_0.36_1)] hover:after:origin-bottom-left hover:after:scale-x-100 dark:after:bg-white cursor-pointer;
+  
+}
+.indicator-line{
+  @apply h-1  w-px rounded-full bg-white transition-all duration-200 ease-in-out;
+}
+.active {
+  animation: indicator-line 0.5s ease infinite;
+  animation-delay: calc(var(--animation-order) * 0.1s);
+}
+.nav-hover-btn{
+  @apply relative ms-10 font-general text-xs uppercase text-blue-50 after:absolute after:-bottom-0.5 after:left-0 after:h-[2px] after:w-full after:origin-bottom-right after:scale-x-0 after:bg-neutral-800 after:transition-transform after:duration-300 after:ease-[cubic-bezier(0.65_0.05_0.36_1)] hover:after:origin-bottom-left hover:after:scale-x-100 dark:after:bg-white cursor-pointer;
+}
+.floating-nav{
+   @apply bg-black rounded-lg border;
 }

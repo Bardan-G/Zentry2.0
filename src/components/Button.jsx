@@ -10,6 +10,7 @@ const Button = ({title,id,leftIcon,rightIcon,containerClass}) => {
                 {title}
             </div>
         </span>
+        {rightIcon}
     </button>
   )
 }
